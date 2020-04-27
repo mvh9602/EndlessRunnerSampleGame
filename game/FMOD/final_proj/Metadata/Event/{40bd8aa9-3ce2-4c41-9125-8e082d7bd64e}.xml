@@ -5,7 +5,7 @@
 			<value>powerUp</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{704ceafa-d8ca-4fbc-9660-cd3d8ea6f1af}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{11c44cae-403c-437e-ae50-9f9c9568389e}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{4f629dec-615e-46b6-9a98-edb74f1d3919}">
@@ -92,6 +95,9 @@
 		<property name="length">
 			<value>10</value>
 		</property>
+		<relationship name="audioFile">
+			<destination>{945a5aab-d1c9-40dd-a705-fa0ebf89b92f}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{739150b6-337f-4662-8b01-37bccebae88c}">
 		<property name="name">

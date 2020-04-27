@@ -16,6 +16,7 @@ public class PatrollingObstacle : Obstacle
 	public Animator animator;
 
 	public AudioClip[] patrollingSound;
+    public string patrollingEventPath;
 
 	protected TrackSegment m_Segement;
 

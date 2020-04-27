@@ -24,6 +24,7 @@ public class GameState : AState
     public TrackManager trackManager;
 
 	public AudioClip gameTheme;
+    public string countdownEventPath = "event:/general/countdown";
 
     [Header("UI")]
     public Text coinText;
@@ -210,6 +211,8 @@ public class GameState : AState
         if (trackManager.isLoaded)
         {
             CharacterInputController chrCtrl = trackManager.characterController;
+            if(trackManager.timeToStart >= 4)
+                FMODUnity.RuntimeManager.PlayOneShot(countdownEventPath);
 
             m_TimeSinceStart += Time.deltaTime;
 

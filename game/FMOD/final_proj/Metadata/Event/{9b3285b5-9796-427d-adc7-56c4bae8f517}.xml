@@ -5,7 +5,7 @@
 			<value>catJump</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{f11a77c6-0c3d-4ee7-b88c-08030f640626}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{56a96ef2-1db5-45a3-8263-0950fb6708ba}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{8425be15-c3aa-4448-9a89-3ff10de0d1eb}">
@@ -92,6 +95,9 @@
 		<property name="length">
 			<value>10</value>
 		</property>
+		<relationship name="audioFile">
+			<destination>{e4db493c-93a8-4977-ae90-b99ac9da33df}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{a0a43da8-667d-4c3b-b812-4ba0c5979497}">
 		<property name="name">

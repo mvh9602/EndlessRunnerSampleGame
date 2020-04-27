@@ -5,7 +5,7 @@
 			<value>catHurt</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{f11a77c6-0c3d-4ee7-b88c-08030f640626}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{44dd18c4-8c5b-475e-ab42-7aea547b17f0}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{cde169f8-5612-4ccd-b88f-1dc75f967d5c}">
@@ -94,6 +97,9 @@
 		</property>
 		<relationship name="modulators">
 			<destination>{c0c9c9db-a54d-4410-9c71-e5dc0c0a5134}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{2abf78f1-a098-480f-877b-01ffd53b3881}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{b49b4410-7c9f-4142-9205-16b8393b85bc}">

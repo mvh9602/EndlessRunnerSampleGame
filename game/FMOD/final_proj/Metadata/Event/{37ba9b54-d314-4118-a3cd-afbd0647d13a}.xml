@@ -5,7 +5,7 @@
 			<value>woodenBarrier</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{704ceafa-d8ca-4fbc-9660-cd3d8ea6f1af}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{9b836fb1-f691-44bc-8007-39bab326a6d3}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{62fd09d8-5ce2-4411-9bea-21f9a0978bfc}">
@@ -94,6 +97,9 @@
 		</property>
 		<relationship name="modulators">
 			<destination>{b22bb866-246b-419b-a9d2-80bed18170f7}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{14bdd19f-8f9b-4c0e-bb9c-95d9406a06c1}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{534e893c-f763-44eb-866a-a90817fb0e42}">

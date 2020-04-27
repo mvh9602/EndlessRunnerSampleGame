@@ -5,7 +5,7 @@
 			<value>magnet</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{704ceafa-d8ca-4fbc-9660-cd3d8ea6f1af}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{94b2d658-1c04-43cf-9135-998ca552fb97}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{808268b5-e024-4468-85da-5008fb90517e}">
@@ -90,8 +93,11 @@
 	<object class="MixerBusPanner" id="{28cb6575-fd7f-41cd-afc9-1b4ebb59be76}" />
 	<object class="SingleSound" id="{0136e150-e73f-4a22-ae2c-5bca354ecd7d}">
 		<property name="length">
-			<value>10</value>
+			<value>1.3953514739229025</value>
 		</property>
+		<relationship name="audioFile">
+			<destination>{d11f4c01-8738-47dc-8b04-059e68596113}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{8058fca4-e8ba-496b-b094-dc09420ce486}">
 		<property name="name">
@@ -112,7 +118,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>10</value>
+			<value>1.3953514739229025</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{94b2d658-1c04-43cf-9135-998ca552fb97}</destination>

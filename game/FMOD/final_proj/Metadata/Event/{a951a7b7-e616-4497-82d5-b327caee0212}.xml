@@ -5,7 +5,7 @@
 			<value>countdown</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{704ceafa-d8ca-4fbc-9660-cd3d8ea6f1af}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{c8c40307-4b71-40ea-8c1c-bb9dd80a111e}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{6876090b-b4fb-468e-b0b4-a4a6fed0c65c}">
@@ -92,6 +95,9 @@
 		<property name="length">
 			<value>10</value>
 		</property>
+		<relationship name="audioFile">
+			<destination>{3f16edc9-bbd0-4bc3-ba03-b9cfaeb716b4}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{752726a7-8382-49dd-9d73-6acd01ff4e4e}">
 		<property name="name">

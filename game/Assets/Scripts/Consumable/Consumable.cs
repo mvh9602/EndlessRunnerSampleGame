@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.AddressableAssets;
+using FMOD.Studio;
 
 /// <summary>
 /// Defines a consumable (called "power up" in game). Each consumable is derived from this and implements its functions.
@@ -21,6 +22,8 @@ public abstract class Consumable : MonoBehaviour
 
     public Sprite icon;
 	public AudioClip activatedSound;
+    public string activatedEventPath;
+    private EventInstance activatedEventRef;
     //public ParticleSystem activatedParticle;
     public AssetReference ActivatedParticleReference;
     public bool canBeSpawned = true;
@@ -39,6 +42,11 @@ public abstract class Consumable : MonoBehaviour
     public abstract string GetConsumableName();
     public abstract int GetPrice();
 	public abstract int GetPremiumCost();
+
+    public void Start()
+    {
+        activatedEventRef = FMODUnity.RuntimeManager.CreateInstance(activatedEventPath);
+    }
 
     public void ResetTime()
     {
@@ -59,7 +67,9 @@ public abstract class Consumable : MonoBehaviour
 		{
 			c.powerupSource.clip = activatedSound;
 			c.powerupSource.Play();
-		}
+            //FMODUnity.RuntimeManager.PlayOneShot(activatedEventPath, transform.position);
+            activatedEventRef.start();
+        }
 
         if(ActivatedParticleReference != null)
         {
@@ -101,7 +111,10 @@ public abstract class Consumable : MonoBehaviour
         }
 
         if (activatedSound != null && c.powerupSource.clip == activatedSound)
+        {
             c.powerupSource.Stop(); //if this one the one using the audio source stop it
+            activatedEventRef.release();
+        }
 
         for (int i = 0; i < c.consumables.Count; ++i)
         {
@@ -109,6 +122,7 @@ public abstract class Consumable : MonoBehaviour
             {//if there is still an active consumable that have a sound, this is the one playing now
                 c.powerupSource.clip = c.consumables[i].activatedSound;
                 c.powerupSource.Play();
+                activatedEventRef.start();
             }
         }
     }

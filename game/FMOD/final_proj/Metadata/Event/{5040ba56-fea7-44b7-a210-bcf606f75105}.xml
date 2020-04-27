@@ -5,7 +5,7 @@
 			<value>ratHit</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{2c2cdb9a-41ab-4ba1-9bfe-c95804c333a7}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{9b1651d9-f23c-464c-8539-3d6e7c2e9049}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{9617fa7a-6520-405d-ae9a-b399b955ebc4}">
@@ -94,6 +97,9 @@
 		</property>
 		<relationship name="modulators">
 			<destination>{1efb126b-2eb7-4014-8f02-e59a077a75d7}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{6cabbbe9-46a2-4543-9d24-a491ce2ce72e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{fd970d29-a931-4be1-b198-85d0819d2c48}">

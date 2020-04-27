@@ -5,7 +5,7 @@
 			<value>claimMission</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{704ceafa-d8ca-4fbc-9660-cd3d8ea6f1af}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{374af6e0-4568-4640-95a1-aeb8d936990d}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{ccb34d99-5ace-4ae0-b561-de540dade467}">
@@ -92,6 +95,9 @@
 		<property name="length">
 			<value>10</value>
 		</property>
+		<relationship name="audioFile">
+			<destination>{a4ad6667-fb0c-4db4-9b89-7c25ece109a5}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{ca6dcc3c-a14a-4974-bdc2-432b77cf6292}">
 		<property name="name">

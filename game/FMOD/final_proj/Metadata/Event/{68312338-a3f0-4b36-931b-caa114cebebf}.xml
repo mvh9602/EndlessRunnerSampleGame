@@ -5,7 +5,7 @@
 			<value>trashCan</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{704ceafa-d8ca-4fbc-9660-cd3d8ea6f1af}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{3ad0022c-67eb-405d-bbd2-c5b0ff91ed4a}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{ef591f6e-a5bd-477d-a056-f8afb68c49ea}">
@@ -94,6 +97,9 @@
 		</property>
 		<relationship name="modulators">
 			<destination>{b806f62d-b431-4224-98ba-0a5c895995f5}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{d3251100-08d3-47f8-8452-72bc18312491}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{7a89a2fc-33fe-4ba4-94a1-fba42da0189d}">

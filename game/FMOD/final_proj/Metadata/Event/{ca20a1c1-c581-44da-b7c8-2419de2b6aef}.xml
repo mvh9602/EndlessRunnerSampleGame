@@ -5,7 +5,7 @@
 			<value>dogHit</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{2b21ebae-a63e-45c9-bf1b-33ee11a4ac54}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{e38d0804-d70e-4240-8ac3-54e088651a53}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{00dbf1b0-9784-4761-8d64-00ad0d4b6960}">
@@ -94,6 +97,9 @@
 		</property>
 		<relationship name="modulators">
 			<destination>{c53164f1-4ab8-428a-bc5e-d934182bb287}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{f7331049-7ac4-40d1-a883-51862612ce6c}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{21ed1f54-2360-4e4f-b73e-f64c15b20d69}">

@@ -5,7 +5,7 @@
 			<value>slide</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{704ceafa-d8ca-4fbc-9660-cd3d8ea6f1af}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{046ecfde-4b87-45d6-b35d-47c552bb7638}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{6d2f181d-f663-480d-8cbe-4f65396e79bf}">
@@ -94,6 +97,9 @@
 		</property>
 		<relationship name="modulators">
 			<destination>{725651fe-4e8f-4fae-af33-0da3a3d64eb0}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{aef2530b-a168-4812-90fe-e5284721e632}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{6936fc49-78e5-4ee4-9bb8-fdb8ce1cc928}">

@@ -5,7 +5,7 @@
 			<value>raccoonDeath</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{7f3b7779-35b2-4c54-9fff-e64b00e46dcf}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{d778a40c-5df9-466c-b7a4-26c7fac9a1e1}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{f0688d34-08d7-4fe9-9485-c1be8d5d3085}">
@@ -92,6 +95,9 @@
 		<property name="length">
 			<value>10</value>
 		</property>
+		<relationship name="audioFile">
+			<destination>{546a2c18-fbde-4f4d-8fe5-e4a13a4628a9}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{e9092864-a3d1-426f-9b07-c4f3ee7f63a6}">
 		<property name="name">

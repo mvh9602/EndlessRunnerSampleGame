@@ -5,7 +5,7 @@
 			<value>raccoonHurt</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{7f3b7779-35b2-4c54-9fff-e64b00e46dcf}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{00c7e6b4-6d24-48e0-bcaf-5387e42df47c}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{ce596566-043e-4466-9954-84184f211e18}">
@@ -94,6 +97,9 @@
 		</property>
 		<relationship name="modulators">
 			<destination>{c40ca2f4-fe38-4b71-ae0d-89963bca2236}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{0a226c1f-1953-4a8f-8bb0-2a574d029f1d}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{0ca452fe-d9ae-47d5-a97d-a8d679c44774}">

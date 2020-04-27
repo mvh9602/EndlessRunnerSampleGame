@@ -9,6 +9,7 @@ using UnityEngine;
 public abstract class Obstacle : MonoBehaviour
 {
 	public AudioClip impactedSound;
+    public string impactEventPath;
 
     public virtual void Setup() {}
 
@@ -30,6 +31,7 @@ public abstract class Obstacle : MonoBehaviour
 			audioSource.loop = false;
 			audioSource.clip = impactedSound;
 			audioSource.Play();
-		}
+            FMODUnity.RuntimeManager.PlayOneShot(impactEventPath, transform.position);
+        }
 	}
 }

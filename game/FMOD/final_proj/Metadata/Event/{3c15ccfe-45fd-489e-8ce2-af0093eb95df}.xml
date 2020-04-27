@@ -5,7 +5,7 @@
 			<value>fishbone</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{704ceafa-d8ca-4fbc-9660-cd3d8ea6f1af}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{400a11e9-d680-4007-bc48-8d1b750ad9aa}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{8c0e0da9-fdcf-4fef-96ce-4fa1b88d306c}">
@@ -94,6 +97,9 @@
 		</property>
 		<relationship name="modulators">
 			<destination>{be573178-de22-4cd3-b2a3-3446bae192c0}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{1887bddd-1564-40df-a2f2-202b2c344c2a}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{8cb56c5e-58ac-4a0b-bdbf-0bc326c8a69d}">

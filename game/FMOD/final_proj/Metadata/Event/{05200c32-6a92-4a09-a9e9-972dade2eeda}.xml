@@ -5,7 +5,7 @@
 			<value>premiumCurrency</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{704ceafa-d8ca-4fbc-9660-cd3d8ea6f1af}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{93ed7186-9ae2-4869-9d07-1db43a8f3d9d}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{fee109fd-37c5-4495-a680-10104428ac49}">
@@ -92,6 +95,9 @@
 		<property name="length">
 			<value>10</value>
 		</property>
+		<relationship name="audioFile">
+			<destination>{8edc5587-a137-4f7d-8972-8b73158d8217}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{302dc0f8-b8bf-4d73-9dbe-790277faa976}">
 		<property name="name">

@@ -5,7 +5,7 @@
 			<value>buttonPress</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{704ceafa-d8ca-4fbc-9660-cd3d8ea6f1af}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{d0ec2d40-6ff6-42a1-8373-14507bc3c3d5}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{bccbca41-06c2-4f52-bd76-65df0cf89c27}">
@@ -92,6 +95,9 @@
 		<property name="length">
 			<value>10</value>
 		</property>
+		<relationship name="audioFile">
+			<destination>{2bfe4e3c-4f84-428f-9fe5-216a62de9ab5}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{b50d908c-085b-41e8-b389-8449ab3317be}">
 		<property name="name">

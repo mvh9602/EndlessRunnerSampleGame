@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{0a226c1f-1953-4a8f-8bb0-2a574d029f1d}">
+		<property name="assetPath">
+			<value>RaccoonHurt.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.52326530612244893</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{66630ff4-d12d-4f5b-8048-020839983280}</destination>
+		</relationship>
+	</object>
+</objects>

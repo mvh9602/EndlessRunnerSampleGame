@@ -5,7 +5,7 @@
 			<value>trafficCone</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{704ceafa-d8ca-4fbc-9660-cd3d8ea6f1af}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{caca7409-5d9b-4244-8afb-e21bdad0d1ea}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{085c6b93-35aa-42cd-bac3-02c8b5e4863e}">
@@ -94,6 +97,9 @@
 		</property>
 		<relationship name="modulators">
 			<destination>{bd373719-5400-428c-a564-5db7a406feae}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{e594436c-4e07-45eb-b632-4ca0fa75851c}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{5fb06350-e204-4a2d-9aca-561adcb3945d}">

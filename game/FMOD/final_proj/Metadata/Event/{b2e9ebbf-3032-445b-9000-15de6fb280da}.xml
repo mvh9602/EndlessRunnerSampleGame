@@ -5,7 +5,7 @@
 			<value>catDeath</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{f11a77c6-0c3d-4ee7-b88c-08030f640626}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{2d1f58dd-2bc9-46ea-830c-188fc2d1c1ed}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{60116099-5cb1-440f-a1e7-fc41adc74dab}">
@@ -92,6 +95,9 @@
 		<property name="length">
 			<value>10</value>
 		</property>
+		<relationship name="audioFile">
+			<destination>{4ce83c85-9179-4b00-9092-ef981d709f3d}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{4e3ee7b7-953c-497f-8456-a3bffadb8e61}">
 		<property name="name">

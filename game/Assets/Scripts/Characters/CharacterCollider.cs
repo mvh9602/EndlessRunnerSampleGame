@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.AddressableAssets;
+using FMOD.Studio;
 
 /// <summary>
 /// Handles everything related to the collider of the character. This is actually an empty game object, NOT on the character prefab
@@ -32,7 +33,9 @@ public class CharacterCollider : MonoBehaviour
 
 	[Header("Sound")]
 	public AudioClip coinSound;
+    public string coinEventPath;
 	public AudioClip premiumSound;
+    public string premiumEventPath;
 
     public DeathEvent deathData { get { return m_DeathData; } }
     public new BoxCollider collider { get { return m_Collider; } }
@@ -113,13 +116,15 @@ public class CharacterCollider : MonoBehaviour
                 PlayerData.instance.premium += 1;
                 controller.premium += 1;
 				m_Audio.PlayOneShot(premiumSound);
-			}
+                FMODUnity.RuntimeManager.PlayOneShot(premiumEventPath, transform.position);
+            }
             else
             {
 				Coin.coinPool.Free(c.gameObject);
                 PlayerData.instance.coins += 1;
 				controller.coins += 1;
 				m_Audio.PlayOneShot(coinSound);
+                FMODUnity.RuntimeManager.PlayOneShot(coinEventPath, transform.position);
             }
         }
         else if(c.gameObject.layer == k_ObstacleLayerIndex)
@@ -156,14 +161,16 @@ public class CharacterCollider : MonoBehaviour
 			if (controller.currentLife > 0)
 			{
 				m_Audio.PlayOneShot(controller.character.hitSound);
+                FMODUnity.RuntimeManager.PlayOneShot(controller.character.hitEventPath, transform.position);
                 SetInvincible ();
 			}
             // The collision killed the player, record all data to analytics.
 			else
 			{
 				m_Audio.PlayOneShot(controller.character.deathSound);
+                FMODUnity.RuntimeManager.PlayOneShot(controller.character.deathEventPath, transform.position);
 
-				m_DeathData.character = controller.character.characterName;
+                m_DeathData.character = controller.character.characterName;
 				m_DeathData.themeUsed = controller.trackManager.currentTheme.themeName;
 				m_DeathData.obstacleType = ob.GetType().ToString();
 				m_DeathData.coins = controller.coins;

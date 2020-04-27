@@ -5,7 +5,7 @@
 			<value>death</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{704ceafa-d8ca-4fbc-9660-cd3d8ea6f1af}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{409d1892-9de1-476f-9dc6-4c70f395f44f}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{2b845085-13df-4048-bbf4-f8ae4fff195e}">
@@ -92,6 +95,9 @@
 		<property name="length">
 			<value>10</value>
 		</property>
+		<relationship name="audioFile">
+			<destination>{0edb3fa0-5151-4141-8f9b-a6978886f700}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{1c116a5f-4e40-4381-86b4-32de992977f3}">
 		<property name="name">

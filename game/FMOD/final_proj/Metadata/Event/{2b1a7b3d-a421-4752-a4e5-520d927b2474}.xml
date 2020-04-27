@@ -5,7 +5,7 @@
 			<value>wheelieBin</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{704ceafa-d8ca-4fbc-9660-cd3d8ea6f1af}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{0caf9697-5868-4272-8cc3-ac0475f3418f}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{b1e72e04-b232-4a88-b347-bf422cd63d8a}">
@@ -94,6 +97,9 @@
 		</property>
 		<relationship name="modulators">
 			<destination>{a29ae1bc-4c8b-4a29-aa47-905a7f1e4082}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{8e95c475-028f-4914-b7de-50ad77ce68f4}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{9ad4f622-2184-491a-9ba8-0bf558148eb7}">

@@ -39,7 +39,9 @@ public class CharacterInputController : MonoBehaviour
 
 	[Header("Sounds")]
 	public AudioClip slideSound;
+    public string slideEventPath;
 	public AudioClip powerUpUseSound;
+    public string powerupEventPath;
 	public AudioSource powerupSource;
 
     [HideInInspector] public int currentTutorialLevel;
@@ -330,7 +332,8 @@ public class CharacterInputController : MonoBehaviour
             character.animator.SetFloat(s_JumpingSpeedHash, animSpeed);
             character.animator.SetBool(s_JumpingHash, true);
 			m_Audio.PlayOneShot(character.jumpSound);
-			m_Jumping = true;
+            FMODUnity.RuntimeManager.PlayOneShot(character.jumpEventPath, transform.position);
+            m_Jumping = true;
         }
     }
 
@@ -361,7 +364,8 @@ public class CharacterInputController : MonoBehaviour
 			character.animator.SetFloat(s_JumpingSpeedHash, animSpeed);
 			character.animator.SetBool(s_SlidingHash, true);
 			m_Audio.PlayOneShot(slideSound);
-			m_Sliding = true;
+            FMODUnity.RuntimeManager.PlayOneShot(slideEventPath, transform.position);
+            m_Sliding = true;
 
 			characterCollider.Slide(true);
 		}
@@ -405,8 +409,9 @@ public class CharacterInputController : MonoBehaviour
     public void UseConsumable(Consumable c)
     {
 		characterCollider.audio.PlayOneShot(powerUpUseSound);
+        FMODUnity.RuntimeManager.PlayOneShot(powerupEventPath, transform.position);
 
-        for(int i = 0; i < m_ActiveConsumables.Count; ++i)
+        for (int i = 0; i < m_ActiveConsumables.Count; ++i)
         {
             if(m_ActiveConsumables[i].GetType() == c.GetType())
             {

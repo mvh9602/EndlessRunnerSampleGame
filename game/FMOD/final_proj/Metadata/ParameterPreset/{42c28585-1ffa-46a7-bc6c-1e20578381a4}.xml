@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{42c28585-1ffa-46a7-bc6c-1e20578381a4}">
+		<property name="name">
+			<value>ratDistance</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ec4b02e4-66f2-4f65-a176-325367648a92}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{0eddb63e-0a8c-45fc-a05f-62f781096d3f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{0eddb63e-0a8c-45fc-a05f-62f781096d3f}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

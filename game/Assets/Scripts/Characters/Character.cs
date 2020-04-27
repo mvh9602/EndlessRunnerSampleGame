@@ -18,8 +18,11 @@ public class Character : MonoBehaviour
 
 	[Header("Sound")]
 	public AudioClip jumpSound;
+    public string jumpEventPath;
 	public AudioClip hitSound;
-	public AudioClip deathSound;
+    public string hitEventPath;
+    public AudioClip deathSound;
+    public string deathEventPath;
 
     // Called by the game when an accessory changes, enable/disable the accessories children objects accordingly
     // a value of -1 as parameter disables all accessory.

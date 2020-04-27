@@ -5,7 +5,7 @@
 			<value>raccoonJump</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{7f3b7779-35b2-4c54-9fff-e64b00e46dcf}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{810c0b2e-9ce0-4e97-9b8e-e8caf935590c}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{8c096f64-323a-438e-9e86-e726c44d600e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{44d42184-071a-44ce-b9b2-467e19a12001}">
@@ -92,6 +95,9 @@
 		<property name="length">
 			<value>10</value>
 		</property>
+		<relationship name="audioFile">
+			<destination>{c4be4d59-3ca0-497b-842d-2b0c8a24de3a}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{d7f00fe1-a204-4628-b464-baa1f8988d06}">
 		<property name="name">
