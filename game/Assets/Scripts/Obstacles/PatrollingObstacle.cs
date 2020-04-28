@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using FMOD.Studio;
 
 public class PatrollingObstacle : Obstacle
 {
@@ -17,6 +18,13 @@ public class PatrollingObstacle : Obstacle
 
 	public AudioClip[] patrollingSound;
     public string patrollingEventPath;
+    public string distanceParamName;
+
+    private EventInstance patrollingEventRef;
+    private PARAMETER_ID distanceParamID;
+    private PLAYBACK_STATE patrollPlayback;
+    //private ParameterInstance distanceParamRef;
+    private GameObject player;
 
 	protected TrackSegment m_Segement;
 
@@ -66,7 +74,23 @@ public class PatrollingObstacle : Obstacle
 			m_Audio.Play();
 		}
 
-		m_OriginalPosition = transform.localPosition + transform.right * m_Segement.manager.laneOffset;
+        patrollingEventRef = FMODUnity.RuntimeManager.CreateInstance(patrollingEventPath);
+        //patrollingEventRef.getParameter(distanceParamPath, out distanceParamRef);
+        //patrollingEventRef.start();
+        //patrollingEventRef.release();
+
+        // This is annoying
+        /*
+        EventDescription patrollingEventDesc;
+        patrollingEventRef.getDescription(out patrollingEventDesc);
+        PARAMETER_DESCRIPTION distanceParamDesc;
+        patrollingEventDesc.getParameterDescriptionByName(distanceParamName, out distanceParamDesc);
+        distanceParamID = distanceParamDesc.id;
+        */
+
+        player = GameObject.FindGameObjectWithTag("Player");
+
+        m_OriginalPosition = transform.localPosition + transform.right * m_Segement.manager.laneOffset;
 		transform.localPosition = m_OriginalPosition;
 
 		float actualTime = Random.Range(minTime, maxTime);
@@ -86,7 +110,8 @@ public class PatrollingObstacle : Obstacle
 	public override void Impacted()
 	{
 	    m_isMoving = false;
-		base.Impacted();
+        patrollingEventRef.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        base.Impacted();
 
 		if (animator != null)
 		{
@@ -98,6 +123,23 @@ public class PatrollingObstacle : Obstacle
 	{
 		if (!m_isMoving)
 			return;
+        patrollingEventRef.getPlaybackState(out patrollPlayback);
+        float distanceToPlayer = Vector3.Magnitude(transform.position - player.transform.position);
+        if(distanceToPlayer < 10f && distanceToPlayer > -10f)
+        {
+            if(patrollPlayback == PLAYBACK_STATE.STOPPED)
+            {
+                patrollingEventRef.start();
+                patrollingEventRef.release();
+            }
+            //patrollingEventRef.setParameterByID(distanceParamID, 1f - (distanceToPlayer / 5));
+            patrollingEventRef.setParameterByName(distanceParamName, 0.5f + 0.5f *(Mathf.Abs(distanceToPlayer) / 10f));
+        }
+        else
+        {
+            //patrollingEventRef.setParameterByID(distanceParamID, 0f);
+            patrollingEventRef.setParameterByName(distanceParamName, 0f);
+        }
 
 		m_CurrentPos += Time.deltaTime * m_MaxSpeed;
 

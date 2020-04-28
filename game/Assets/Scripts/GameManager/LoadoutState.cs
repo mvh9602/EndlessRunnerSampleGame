@@ -42,6 +42,7 @@ public class LoadoutState : AState
 	public Leaderboard leaderboard;
     public MissionUI missionPopup;
 	public Button runButton;
+    public string runAudioPath = "event:/general/buttonPress";
 
     public GameObject tutorialBlocker;
     public GameObject tutorialPrompt;
@@ -98,6 +99,7 @@ public class LoadoutState : AState
 
         runButton.interactable = false;
         runButton.GetComponentInChildren<Text>().text = "Loading...";
+        runButton.onClick.AddListener(ButtonSound);
 
         if(m_PowerupToUse != Consumable.ConsumableType.NONE)
         {
@@ -107,6 +109,11 @@ public class LoadoutState : AState
         }
 
         Refresh();
+    }
+
+    public void ButtonSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(runAudioPath);
     }
 
     public override void Exit(AState to)

@@ -211,7 +211,7 @@ public class GameState : AState
         if (trackManager.isLoaded)
         {
             CharacterInputController chrCtrl = trackManager.characterController;
-            if(trackManager.timeToStart >= 4)
+            if(trackManager.timeToStart >= 5)
                 FMODUnity.RuntimeManager.PlayOneShot(countdownEventPath);
 
             m_TimeSinceStart += Time.deltaTime;
@@ -327,7 +327,9 @@ public class GameState : AState
 		// Used by the pause menu to return immediately to loadout, canceling everything.
 		Time.timeScale = 1.0f;
 		AudioListener.pause = false;
-		trackManager.End();
+        FMOD.Studio.Bus sfxBus = FMODUnity.RuntimeManager.GetBus("bus:/SFX");
+        sfxBus.stopAllEvents(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        trackManager.End();
 		trackManager.isRerun = false;
         PlayerData.instance.Save();
 		manager.SwitchState ("Loadout");

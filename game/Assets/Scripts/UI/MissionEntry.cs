@@ -8,8 +8,9 @@ public class MissionEntry : MonoBehaviour
     public Button claimButton;
     public Text progressText;
 	public Image background;
+    public string claimAudioPath = "event:/general/claimMission";
 
-	public Color notCompletedColor;
+    public Color notCompletedColor;
 	public Color completedColor;
 
     public void FillWithMission(MissionBase m, MissionUI owner)
@@ -29,6 +30,7 @@ public class MissionEntry : MonoBehaviour
 			rewardText.color = Color.white;
 
 			claimButton.onClick.AddListener(delegate { owner.Claim(m); } );
+            claimButton.onClick.AddListener(PlayAudio);
         }
         else
         {
@@ -42,5 +44,10 @@ public class MissionEntry : MonoBehaviour
 
 			progressText.text = ((int)m.progress) + " / " + ((int)m.max);
         }
+    }
+
+    void PlayAudio()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(claimAudioPath);
     }
 }

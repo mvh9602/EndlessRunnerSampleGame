@@ -9376,6 +9376,7 @@ MonoBehaviour:
   leaderboard: {fileID: 1815696064}
   missionPopup: {fileID: 137514649}
   runButton: {fileID: 1393864684}
+  runAudioPath: event:/general/buttonPress
   tutorialBlocker: {fileID: 1557869168}
   tutorialPrompt: {fileID: 610653253}
   skyMeshFilter: {fileID: 1222759691}
@@ -14649,6 +14650,7 @@ MonoBehaviour:
   canvas: {fileID: 1245236424}
   trackManager: {fileID: 1958487560}
   gameTheme: {fileID: 8300000, guid: b341b9410b3c5274e8b15199f3b95fb5, type: 3}
+  countdownEventPath: event:/general/countdown
   coinText: {fileID: 50343042}
   premiumText: {fileID: 1226467019}
   scoreText: {fileID: 780872363}

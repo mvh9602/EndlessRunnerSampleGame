@@ -113,7 +113,7 @@ public abstract class Consumable : MonoBehaviour
         if (activatedSound != null && c.powerupSource.clip == activatedSound)
         {
             c.powerupSource.Stop(); //if this one the one using the audio source stop it
-            activatedEventRef.release();
+            activatedEventRef.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
 
         for (int i = 0; i < c.consumables.Count; ++i)

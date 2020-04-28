@@ -150,6 +150,8 @@ MonoBehaviour:
   patrollingSound:
   - {fileID: 8300000, guid: 692deea899152264f8419135ceefafcb, type: 3}
   - {fileID: 8300000, guid: a683c76e59dd6b04a9420526560624a0, type: 3}
+  patrollingEventPath: event:/rat/ratGrowl
+  distanceParamName: ratDistance
 --- !u!65 &65000013118866804
 BoxCollider:
   m_ObjectHideFlags: 0
