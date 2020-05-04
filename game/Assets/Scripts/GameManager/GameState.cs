@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using FMOD.Studio;
 
 #if UNITY_ADS
 using UnityEngine.Advertisements;
@@ -25,6 +26,10 @@ public class GameState : AState
 
 	public AudioClip gameTheme;
     public string countdownEventPath = "event:/general/countdown";
+    public string ambienceEventPath = "event:/general/ambience";
+    public string pausedMixerPath = "snapshot:/Paused";
+    private EventInstance ambienceEventRef;
+    private EventInstance pausedSnapshot;
 
     [Header("UI")]
     public Text coinText;
@@ -104,6 +109,8 @@ public class GameState : AState
 
         m_AdsInitialised = false;
         m_GameoverSelectionDone = false;
+        ambienceEventRef = FMODUnity.RuntimeManager.CreateInstance(ambienceEventPath);
+        pausedSnapshot = FMODUnity.RuntimeManager.CreateInstance(pausedMixerPath);
 
         StartGame();
     }
@@ -128,6 +135,8 @@ public class GameState : AState
         downSlideTuto.SetActive(false);
         finishTuto.SetActive(false);
         tutorialValidatedObstacles.gameObject.SetActive(false);
+
+        ambienceEventRef.start();
 
         if (!trackManager.isRerun)
         {
@@ -300,6 +309,7 @@ public class GameState : AState
 
 		AudioListener.pause = true;
 		Time.timeScale = 0;
+        pausedSnapshot.start();
 
 		pauseButton.gameObject.SetActive(false);
         pauseMenu.gameObject.SetActive (displayMenu);
@@ -319,6 +329,7 @@ public class GameState : AState
 			trackManager.StartMove(false);
 		}
 
+        pausedSnapshot.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
 		AudioListener.pause = false;
 	}
 
@@ -423,6 +434,8 @@ public class GameState : AState
 
     public void GameOver()
     {
+        FMOD.Studio.Bus sfxBus = FMODUnity.RuntimeManager.GetBus("bus:/SFX");
+        sfxBus.stopAllEvents(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         manager.SwitchState("GameOver");
     }
 

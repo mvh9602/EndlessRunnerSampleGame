@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MixerGroup" id="{1408a29e-6a9b-4add-be64-7469d8311586}">
+		<property name="volume">
+			<value>-0.5</value>
+		</property>
+		<property name="name">
+			<value>Character</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{48562f7a-98a8-4b50-8c79-f7b775b4ae3c}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{c7d8b9a8-3883-4791-9e18-e92d953ec6c0}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{0d0fcc9e-954d-4b24-8086-641fd12aea7e}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{48562f7a-98a8-4b50-8c79-f7b775b4ae3c}">
+		<relationship name="effects">
+			<destination>{ee0de88a-7637-4f94-b9bf-b298fdfc8898}</destination>
+			<destination>{e16e19d2-a94f-4d25-8921-60739d3b8239}</destination>
+			<destination>{08e6db27-26ef-4a5b-a028-89537f7d2b91}</destination>
+			<destination>{26a63e2e-5c88-4f53-b6dc-f4be82007996}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{c7d8b9a8-3883-4791-9e18-e92d953ec6c0}" />
+	<object class="CompressorEffect" id="{ee0de88a-7637-4f94-b9bf-b298fdfc8898}">
+		<property name="threshold">
+			<value>-15</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{e8c08920-7cc1-42a8-aac8-99b34cf2064b}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusFader" id="{e16e19d2-a94f-4d25-8921-60739d3b8239}" />
+	<object class="MixerSend" id="{08e6db27-26ef-4a5b-a028-89537f7d2b91}">
+		<property name="level">
+			<value>-18</value>
+		</property>
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{a02884c5-2dc2-4274-9917-dc68fc74e7ce}</destination>
+		</relationship>
+	</object>
+	<object class="ThreeEQEffect" id="{26a63e2e-5c88-4f53-b6dc-f4be82007996}">
+		<property name="lowGain">
+			<value>-6</value>
+		</property>
+	</object>
+</objects>

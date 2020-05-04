@@ -97,6 +97,7 @@ public abstract class Consumable : MonoBehaviour
         m_SinceStart += Time.deltaTime;
         if (m_SinceStart >= duration)
         {
+            activatedEventRef.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             m_Active = false;
             return;
         }

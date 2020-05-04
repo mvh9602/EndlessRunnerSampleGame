@@ -1,5 +1,39 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9068204745855748981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-9007159095273015255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-8906303497585303928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,6 +51,41 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-8628575040088385650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-8549837513697955530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241561352568560
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-8495462324653801402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32,7 +101,7 @@ MonoBehaviour:
   Path: event:/cat/catHurt
   guid: add8342932992d4e876dcbc742eda464
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -40,6 +109,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10000
+--- !u!114 &-8325968946251419518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-8137198781608600481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,7 +141,7 @@ MonoBehaviour:
   Path: event:/rat/ratHit
   guid: 56ba4050a7feb744a210bcf606f75105
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -63,6 +149,40 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10000
+--- !u!114 &-8016284021522302364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-7953416368198152713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-7272634575907058607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,7 +198,7 @@ MonoBehaviour:
   Path: event:/general/magnet
   guid: c3ee8920e47499479297e12bd915d596
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -86,6 +206,81 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1395
+--- !u!114 &-7173584087203872302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-7144953190828371549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241587439679270
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-6897394975222954636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241511399628211
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-6745442068878723777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Game
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Game
+  guid: 0fd6d099afd1ee4e92f6c22a7771855c
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-6609042315273111323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,6 +294,110 @@ MonoBehaviour:
   m_Name: parameter:/ratGrowl/ratDistance
   m_EditorClassIdentifier: 
   Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-6391202019528227028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241505897180383
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-6196085720754968265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-6178035435259811673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-5964335298216109163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241509715937568
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-5668798195060158407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-5630324748351526416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
   Min: 0
   Max: 1
   Default: 0
@@ -118,7 +417,7 @@ MonoBehaviour:
   Path: event:/general/wheelieBin
   guid: 3d7b1a2b21a45247a4e5520d927b2474
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -141,14 +440,14 @@ MonoBehaviour:
   Path: event:/general/buttonPress
   guid: a88604e457b0e74a875dfd13d360fb04
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 10000
+  Length: 3400
 --- !u!114 &-4925880971253579421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +463,7 @@ MonoBehaviour:
   Path: event:/general/trashCan
   guid: 38233168f0a3364b931bcaa114cebebf
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -172,6 +471,74 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10000
+--- !u!114 &-4339492098134931659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-4006914973681570154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-3974378423490635856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-3881922051325773141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-3873921945048103305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,7 +555,24 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
+--- !u!114 &-3778104345370469371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-3563598561152433408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,7 +589,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-2920298082738782810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,12 +605,12 @@ MonoBehaviour:
   Path: event:/dog/dogGrowl
   guid: 8b8b8675869f104898f5553f9962e380
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -3563598561152433408}
+  - {fileID: -8016284021522302364}
   MinDistance: 0
   MaxDistance: 0
   Length: 2800
@@ -266,6 +650,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-2348272082864725687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-2247855604156248471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,7 +682,7 @@ MonoBehaviour:
   Path: event:/cat/catDeath
   guid: bfebe9b232305b44900015de6fb280da
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -304,7 +705,7 @@ MonoBehaviour:
   Path: event:/cat/catJump
   guid: b585329b96977d42adc756c4bae8f517
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -312,6 +713,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10000
+--- !u!114 &-1747726693308146898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241555817777654
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-1674028534555971781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,6 +749,151 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-1514757326911108007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-1405130780765458017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241394202948056
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-1403014045718340595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241515960327176
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-1294829412071131166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-944528534000440089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-706230933861463453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241412349109510
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-603013761613205074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-407920882108261679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Paused
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Paused
+  guid: 22ed6380f495134785aad14e5444fe71
+  Banks:
+  - {fileID: 214485823214907757}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-3593264925563016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,7 +926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 2651325613497536502}
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   EditorEvents:
   - {fileID: 7718700128721237392}
   - {fileID: 2819374708471073955}
@@ -388,13 +952,32 @@ MonoBehaviour:
   - {fileID: -7272634575907058607}
   - {fileID: 6094484383156142462}
   - {fileID: 8461455410496884998}
+  - {fileID: -407920882108261679}
+  - {fileID: 4452613077899969355}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   StringsBanks:
   - {fileID: 2651325613497536502}
-  stringsBankWriteTime: 637236852818478535
+  stringsBankWriteTime: 637241640304091947
   cacheVersion: 3
+--- !u!114 &136582118505546890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &166364025650151076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,6 +991,41 @@ MonoBehaviour:
   m_Name: parameter:/dogGrowl/dogDistance
   m_EditorClassIdentifier: 
   Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &214485823214907757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241640304001701
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &410971209527361438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
   Min: 0
   Max: 1
   Default: 0
@@ -427,7 +1045,7 @@ MonoBehaviour:
   Path: event:/raccoon/raccoonJump
   guid: 6646c98a32363f41a0fd08401dba0368
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -435,6 +1053,58 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10000
+--- !u!114 &457875447546847783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &838003741339025592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236959245094098
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &1155468415783569409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &1515114262153740884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,7 +1120,7 @@ MonoBehaviour:
   Path: event:/raccoon/raccoonHurt
   guid: 88fb1d871787234ba8a4f4d13bab2c35
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -458,6 +1128,76 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10000
+--- !u!114 &1525703718469711571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &1976936358907573370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &2048379591281534046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241561690445540
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &2151240523298298483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241415216737806
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &2651325613497536502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,11 +1212,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/final_proj/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637236852818478535
+  lastModified: 637241640304091947
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1920
+    Value: 2282
   Exists: 1
 --- !u!114 &2819374708471073955
 MonoBehaviour:
@@ -493,7 +1233,7 @@ MonoBehaviour:
   Path: event:/general/trafficCone
   guid: 2b95aa1876ed34449b21a4bd89527408
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -501,6 +1241,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10000
+--- !u!114 &2897088060308454614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241582721115515
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &3143699207463668340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,7 +1274,7 @@ MonoBehaviour:
   Path: event:/general/death
   guid: a07b48487bd5ed4b8c421d50f5a17ecd
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -539,7 +1297,7 @@ MonoBehaviour:
   Path: event:/general/powerUp
   guid: a98abd40e23c414c91258e082d7bd64e
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -547,6 +1305,40 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10000
+--- !u!114 &3735060287850678386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &3977669421306736151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &4076156407052314849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,6 +1357,81 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &4452613077899969355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/general/ambience
+  m_EditorClassIdentifier: 
+  Path: event:/general/ambience
+  guid: ed445e1921295d4c93822eddf0b1f0c8
+  Banks:
+  - {fileID: 214485823214907757}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &4605087878462680949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &4805412092630988521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241416480950155
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &4930546936722219012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &5088014523431310440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,7 +1447,7 @@ MonoBehaviour:
   Path: event:/general/woodenBarrier
   guid: 549bba3714d31841a3cdafbd0647d13a
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -588,6 +1455,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10000
+--- !u!114 &5317995726855253981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &5350059186875907440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,7 +1487,7 @@ MonoBehaviour:
   Path: event:/raccoon/raccoonDeath
   guid: 496f13b45d8a6c49981f63002ba279eb
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -628,7 +1512,59 @@ MonoBehaviour:
   lastModified: 637236852818378266
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
+--- !u!114 &5636075364244042266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &5773601804117183673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &5785779054487178257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241559976666850
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &5934867421933602706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -644,7 +1580,7 @@ MonoBehaviour:
   Path: event:/general/premiumCurrency
   guid: 320c2005926a094aa9e9972dade2eeda
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -652,6 +1588,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10000
+--- !u!114 &5942164744725268804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241504141645538
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &6031032429766803057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -667,14 +1621,14 @@ MonoBehaviour:
   Path: event:/general/invincible
   guid: 79e60c01d3fb3d4eae50c6f456c0e1f6
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1395
+  Length: 1220
 --- !u!114 &6094484383156142462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -690,7 +1644,7 @@ MonoBehaviour:
   Path: event:/general/claimMission
   guid: d0e38cb966904047af8ca28f501cc869
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -698,6 +1652,110 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10000
+--- !u!114 &6189436098224890630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &6416351334539883906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &6511301263984310046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241553276719468
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &6587447809086407566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &7314063182372801191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241562149909075
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &7587295439013988747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ratGrowl/ratDistance
+  m_EditorClassIdentifier: 
+  Name: ratDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &7718700128721237392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -713,15 +1771,15 @@ MonoBehaviour:
   Path: event:/rat/ratGrowl
   guid: 276c670c2df6bc4aafd69332f6e9aecf
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
-  - {fileID: -3873921945048103305}
+  - {fileID: 457875447546847783}
   MinDistance: 0
   MaxDistance: 0
-  Length: 2000
+  Length: 3500
 --- !u!114 &7786935757241825350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,7 +1795,7 @@ MonoBehaviour:
   Path: event:/general/countdown
   guid: b7a751a916e6974482d5b327caee0212
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -760,7 +1818,7 @@ MonoBehaviour:
   Path: event:/general/fishbone
   guid: fecc153cfd459e488ce2af0093eb95df
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -768,6 +1826,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10000
+--- !u!114 &8481575815388065548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/final_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241502185599101
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &8615867840251660082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -800,7 +1876,7 @@ MonoBehaviour:
   Path: event:/general/slide
   guid: 7178ddb368a9f645a2599500f2d119f4
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -808,6 +1884,40 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10000
+--- !u!114 &8992056186298614077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &9136526992322546700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/dogGrowl/dogDistance
+  m_EditorClassIdentifier: 
+  Name: dogDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &9191332358200147615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -823,7 +1933,7 @@ MonoBehaviour:
   Path: event:/dog/dogHit
   guid: c1a120ca81c5da44b7c82419de2b6aef
   Banks:
-  - {fileID: 5363098732869553279}
+  - {fileID: 214485823214907757}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1

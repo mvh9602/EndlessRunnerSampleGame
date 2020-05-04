@@ -15,8 +15,10 @@ public class GameOverState : AState
     public MissionUI missionPopup;
 
 	public AudioClip gameOverTheme;
+    public string gameOverEventPath = "event:/general/death";
 
-	public Leaderboard miniLeaderboard;
+
+    public Leaderboard miniLeaderboard;
 	public Leaderboard fullLeaderboard;
 
     public GameObject addButton;
@@ -40,7 +42,9 @@ public class GameOverState : AState
 		if (MusicPlayer.instance.GetStem(0) != gameOverTheme)
 		{
             MusicPlayer.instance.SetStem(0, gameOverTheme);
-			StartCoroutine(MusicPlayer.instance.RestartAllStems());
+            FMODUnity.RuntimeManager.PlayOneShot(gameOverEventPath);
+
+            StartCoroutine(MusicPlayer.instance.RestartAllStems());
         }
     }
 

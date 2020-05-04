@@ -19,6 +19,7 @@ public class PatrollingObstacle : Obstacle
 	public AudioClip[] patrollingSound;
     public string patrollingEventPath;
     public string distanceParamName;
+    public float audibleDist = 15f;
 
     private EventInstance patrollingEventRef;
     private PARAMETER_ID distanceParamID;
@@ -75,18 +76,6 @@ public class PatrollingObstacle : Obstacle
 		}
 
         patrollingEventRef = FMODUnity.RuntimeManager.CreateInstance(patrollingEventPath);
-        //patrollingEventRef.getParameter(distanceParamPath, out distanceParamRef);
-        //patrollingEventRef.start();
-        //patrollingEventRef.release();
-
-        // This is annoying
-        /*
-        EventDescription patrollingEventDesc;
-        patrollingEventRef.getDescription(out patrollingEventDesc);
-        PARAMETER_DESCRIPTION distanceParamDesc;
-        patrollingEventDesc.getParameterDescriptionByName(distanceParamName, out distanceParamDesc);
-        distanceParamID = distanceParamDesc.id;
-        */
 
         player = GameObject.FindGameObjectWithTag("Player");
 
@@ -125,19 +114,21 @@ public class PatrollingObstacle : Obstacle
 			return;
         patrollingEventRef.getPlaybackState(out patrollPlayback);
         float distanceToPlayer = Vector3.Magnitude(transform.position - player.transform.position);
-        if(distanceToPlayer < 10f && distanceToPlayer > -10f)
+        if(distanceToPlayer < audibleDist && distanceToPlayer > -audibleDist)
         {
             if(patrollPlayback == PLAYBACK_STATE.STOPPED)
             {
                 patrollingEventRef.start();
                 patrollingEventRef.release();
             }
-            //patrollingEventRef.setParameterByID(distanceParamID, 1f - (distanceToPlayer / 5));
-            patrollingEventRef.setParameterByName(distanceParamName, 0.5f + 0.5f *(Mathf.Abs(distanceToPlayer) / 10f));
+            patrollingEventRef.setParameterByName(distanceParamName, 0.5f + 0.5f *(Mathf.Abs(distanceToPlayer) / audibleDist));
+        }
+        else if (distanceToPlayer > audibleDist || distanceToPlayer < -audibleDist && patrollPlayback == PLAYBACK_STATE.PLAYING)
+        {
+            patrollingEventRef.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
         else
         {
-            //patrollingEventRef.setParameterByID(distanceParamID, 0f);
             patrollingEventRef.setParameterByName(distanceParamName, 0f);
         }
 

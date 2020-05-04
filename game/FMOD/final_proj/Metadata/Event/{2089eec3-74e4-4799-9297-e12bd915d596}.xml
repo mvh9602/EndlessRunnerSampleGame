@@ -53,7 +53,7 @@
 			<destination>{28cb6575-fd7f-41cd-afc9-1b4ebb59be76}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d0fcc9e-954d-4b24-8086-641fd12aea7e}</destination>
+			<destination>{6470cd77-eb1a-45b2-9722-a32da62b01b5}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{ffa275f5-33bb-493a-b9f5-deed950bf6bf}" />
@@ -75,6 +75,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{ab34f551-48db-4dde-af24-7bce5ce25f4f}">
+		<property name="volume">
+			<value>-8</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{5f23e5dc-b265-478a-a193-e7489b17ec06}</destination>
 		</relationship>
@@ -96,13 +99,16 @@
 			<value>1.3953514739229025</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{d11f4c01-8738-47dc-8b04-059e68596113}</destination>
+			<destination>{414065c2-bf6a-4973-b224-34ca1c85c796}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{8058fca4-e8ba-496b-b094-dc09420ce486}">
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{9cce4004-98c6-40a5-883e-bcb5668e134e}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{35cb5f27-43ff-4943-9a20-79e38803711e}</destination>
 		</relationship>
@@ -118,7 +124,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>1.3953514739229025</value>
+			<value>1.0600000000000001</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{94b2d658-1c04-43cf-9135-998ca552fb97}</destination>
@@ -134,6 +140,32 @@
 	</object>
 	<object class="MixerBusPanner" id="{2cb8adf4-7ed5-4ca3-969a-4b4b346552b8}" />
 	<object class="MixerBusFader" id="{cd00e245-1d7b-4d9c-b0df-10fd2180c451}" />
+	<object class="ADSRModulator" id="{9cce4004-98c6-40a5-883e-bcb5668e134e}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>280</value>
+		</property>
+		<property name="peakValue">
+			<value>-10.3999996</value>
+		</property>
+		<property name="holdTime">
+			<value>340</value>
+		</property>
+		<property name="decayTime">
+			<value>460</value>
+		</property>
+		<property name="releaseTime">
+			<value>596.153992</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{35cb5f27-43ff-4943-9a20-79e38803711e}">
 		<relationship name="effects">
 			<destination>{3974301e-56af-40d7-9f42-48dc8c0e02f3}</destination>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MixerGroup" id="{6470cd77-eb1a-45b2-9722-a32da62b01b5}">
+		<property name="volume">
+			<value>-1.5</value>
+		</property>
+		<property name="name">
+			<value>Collectable</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{fde88a25-8618-48f0-aefc-b4a147d6d84f}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{270dbc92-8a8c-4326-bedd-5bea98c9097e}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{0d0fcc9e-954d-4b24-8086-641fd12aea7e}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{fde88a25-8618-48f0-aefc-b4a147d6d84f}">
+		<relationship name="effects">
+			<destination>{6df41021-6e34-4bb4-acb6-621859baa0be}</destination>
+			<destination>{373ce44f-57db-4ef8-a3f0-469741417f08}</destination>
+			<destination>{97794464-1027-4332-8b63-c3eafc034917}</destination>
+			<destination>{555fe20f-328b-457d-941b-b5be1c6e81dd}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{270dbc92-8a8c-4326-bedd-5bea98c9097e}" />
+	<object class="CompressorEffect" id="{6df41021-6e34-4bb4-acb6-621859baa0be}">
+		<property name="threshold">
+			<value>-22.5</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{7388aa74-75c5-4f0a-83ce-7a0cff7ab37a}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusFader" id="{373ce44f-57db-4ef8-a3f0-469741417f08}" />
+	<object class="MixerSend" id="{97794464-1027-4332-8b63-c3eafc034917}">
+		<property name="level">
+			<value>-18</value>
+		</property>
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{a02884c5-2dc2-4274-9917-dc68fc74e7ce}</destination>
+		</relationship>
+	</object>
+	<object class="ThreeEQEffect" id="{555fe20f-328b-457d-941b-b5be1c6e81dd}">
+		<property name="lowGain">
+			<value>-4.5</value>
+		</property>
+		<property name="highGain">
+			<value>-3</value>
+		</property>
+	</object>
+</objects>
